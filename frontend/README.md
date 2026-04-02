@@ -1,8 +1,16 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+This is the Next.js App Router frontend for the workspace. It uses Tailwind CSS and tRPC client hooks.
+
+## Structure
+
+- `src/app`: route segments and layout
+- `src/components`: reusable UI and client components
+- `src/providers`: React context providers, including tRPC and React Query
+- `src/lib`: client helpers and utilities
+- `backend/src/trpc`: tRPC server router, context, and Nest integration
 
 ## Getting Started
 
-First, run the development server:
+First, run the frontend development server:
 
 ```bash
 npm run dev
@@ -16,7 +24,9 @@ bun dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Set `NEXT_PUBLIC_TRPC_URL=http://localhost:4000/trpc` if your backend is running on the default NestJS port.
+
+You can start editing the page by modifying `src/app/page.tsx`.
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
