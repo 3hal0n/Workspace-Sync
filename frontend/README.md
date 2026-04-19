@@ -1,26 +1,8 @@
-## Workspace Sync
-
-Workspace Sync is a full-stack project management and time-tracking dashboard. It was built specifically to bridge high-end frontend design with enterprise-grade backend architecture.
-
-This project was developed under a Strict Manual Coding Policy.
-
-Zero AI Assistance: No GitHub Copilot, ChatGPT, Claude, or AI-powered IDE agents were used for code generation.
-
-Purpose: To master the foundational "muscle memory" of CSS layouts, Java Spring Boot patterns, and complex state management.
-
-Outcome: Every line of code, from the Tailwind grid configurations to the Spring Boot DTO mappings, was written manually to ensure deep technical understanding and architectural integrity.
-
-## Structure
-
-- `src/app`: route segments and layout
-- `src/components`: reusable UI and client components
-- `src/providers`: React context providers, including tRPC and React Query
-- `src/lib`: client helpers and utilities
-- `backend/src/trpc`: tRPC server router, context, and Nest integration
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
 
-First, run the frontend development server:
+First, run the development server:
 
 ```bash
 npm run dev
@@ -34,9 +16,7 @@ bun dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-Set `NEXT_PUBLIC_TRPC_URL=http://localhost:4000/trpc` if your backend is running on the default NestJS port.
-
-You can start editing the page by modifying `src/app/page.tsx`.
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
